@@ -1,4 +1,4 @@
-import type {Votes} from "../App/App.tsx";
+import type {Votes} from "../types/votes.ts";
 import styles from "./VoteStats.module.css"
 
 

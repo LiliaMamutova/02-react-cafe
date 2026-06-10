@@ -2,15 +2,9 @@ import css from "./App.module.css"
 import CafeInfo from "../CafeInfo/CafeInfo.tsx";
 import VoteOptions from "../VoteOptions/VoteOptions.tsx";
 import {useState} from "react";
-import type {VoteType} from "../types/votes.ts";
+import type {Votes, VoteType} from "../types/votes.ts";
 import VoteStats from "../VoteStats/VoteStats.tsx";
 import Notification from "../Notification/Notification.tsx";
-
-export interface Votes {
-    good: number;
-    neutral: number;
-    bad: number;
-}
 
 export default function App() {
     const initialState: Votes = {

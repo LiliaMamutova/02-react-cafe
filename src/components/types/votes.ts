@@ -1,6 +1,7 @@
-
 export interface Votes {
-    type: VoteType;
+    good: number;
+    neutral: number;
+    bad: number;
 }
 
 
