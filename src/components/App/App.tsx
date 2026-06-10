@@ -14,7 +14,7 @@ export default function App() {
     }
     const [votes, setVotes] = useState(initialState);
 
-    const handleVote = (type: VoteType) => {
+    const handleVote = (type: VoteType): void => {
         setVotes((prevState: Votes) => ({
             ...prevState,
             [type]: prevState[type] + 1,
